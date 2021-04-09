@@ -13,7 +13,7 @@ import firebase from "firebase";
 function MessageSender() {
   const [input, setInput] = useState("");
   const [imageUrl, setImageUrl] = useState("");
-  const [{ user }] = useStateValue();
+  const [{ user }, dispatch] = useStateValue();
 
   const handleSubmit = (e) => {
     e.preventDefault();
